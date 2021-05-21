@@ -5,7 +5,7 @@ export const Mediamarkt: Store = {
   currency: '€',
   labels: {
     captcha: {
-      container: 'body > p:nth-child(3)',
+      container: 'body',
       text: ['Das ging uns leider zu schnell.'],
     },
     maxPrice: {
@@ -315,24 +315,6 @@ export const Mediamarkt: Store = {
       model: 'ps5 digital',
       series: 'sonyps5de',
       url: 'https://www.mediamarkt.de/de/product/-2661939.html',
-    },
-    {
-      brand: 'sony',
-      model: 'ps5 digital',
-      series: 'sonyps5de',
-      url: 'https://www.mediamarkt.de/de/product/_sony-playstation%C2%AE5-digital-edition-dualsense%E2%84%A2-2715825.html',
-    },
-    {
-      brand: 'sony',
-      model: 'ps5 digital',
-      series: 'sonyps5de',
-      url: 'https://www.mediamarkt.de/de/product/_sony-playstation%C2%AE5-digital-edition-hd-kamera-2715823.html',
-    },
-    {
-      brand: 'sony',
-      model: 'ps5 digital',
-      series: 'sonyps5de',
-      url: 'https://www.mediamarkt.de/de/product/_sony-playstation%C2%AE5-digital-edition-medienfernbedienung-2722423.html',
     },
     {
       brand: 'microsoft',

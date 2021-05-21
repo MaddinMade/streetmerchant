@@ -18,6 +18,7 @@ import {AmazonNl} from './amazon-nl';
 import {AmazonSg} from './amazon-sg';
 import {AmazonUk} from './amazon-uk';
 import {Amd} from './amd';
+import {AmdAt} from './amd-at';
 import {AmdBe} from './amd-be';
 import {AmdCa} from './amd-ca';
 import {AmdDe} from './amd-de';
@@ -48,7 +49,6 @@ import {Centrecom} from './centrecom';
 import {Comet} from './comet';
 import {ComputerAlliance} from './computeralliance';
 import {Computeruniverse} from './computeruniverse';
-import {Conrad} from "./conrad";
 import {Coolblue} from './coolblue';
 import {Coolmod} from './coolmod';
 import {Corsair} from './corsair';
@@ -56,6 +56,7 @@ import {CorsairUK} from './corsair-uk';
 import {Cpl} from './cpl';
 import {Currys} from './currys';
 import {Cyberport} from './cyberport';
+import {CyberportAt} from './cyberport-at';
 import {Dcomp} from './dcomp';
 import {Drako} from './drako';
 import {DustinHomeNO} from './dustinhome-no';
@@ -96,6 +97,7 @@ import {MicroCenter} from './microcenter';
 import {MightyApe} from './mightyape';
 import {Mindfactory} from './mindfactory';
 import {Msy} from './msy';
+import {Multicom} from './multicom';
 import {Mwave} from './mwave';
 import {NetonnetNO} from './netonnet-no';
 import {Newegg} from './newegg';
@@ -155,19 +157,6 @@ import {Xbox} from './xbox';
 import {Zotac} from './zotac';
 import {logger} from '../../logger';
 import chalk from 'chalk';
-import {Konsolenkost} from "./konsolenkost";
-import {MyToys} from "./mytoys";
-import {Mueller} from "./mueller";
-import {Libro} from "./libro";
-import {Digitec} from "./digitec";
-import {Fust} from "./fust";
-import {Interdiscount} from "./interdiscount";
-import {MediamarktCh} from "./mediamarkt-ch";
-import {Melectronics} from "./melectronics";
-import {WOG} from "./wog";
-import {Electronic4you} from "./electronic4you";
-import {GameShop} from "./gameshop";
-import {SmythsToysDE} from "./smythstoys-de";
 
 export const storeList = new Map([
   [AComPC.name, AComPC],
@@ -187,6 +176,7 @@ export const storeList = new Map([
   [AmazonSg.name, AmazonSg],
   [AmazonUk.name, AmazonUk],
   [Amd.name, Amd],
+  [AmdAt.name, AmdAt],
   [AmdBe.name, AmdBe],
   [AmdCa.name, AmdCa],
   [AmdDe.name, AmdDe],
@@ -217,7 +207,6 @@ export const storeList = new Map([
   [Comet.name, Comet],
   [ComputerAlliance.name, ComputerAlliance],
   [Computeruniverse.name, Computeruniverse],
-  [Conrad.name, Conrad],
   [Coolblue.name, Coolblue],
   [Coolmod.name, Coolmod],
   [Corsair.name, Corsair],
@@ -225,14 +214,13 @@ export const storeList = new Map([
   [Cpl.name, Cpl],
   [Currys.name, Currys],
   [Cyberport.name, Cyberport],
+  [CyberportAt.name, CyberportAt],
   [Dcomp.name, Dcomp],
-  [Digitec.name, Digitec],
   [Drako.name, Drako],
   [DustinHomeNO.name, DustinHomeNO],
   [EbGames.name, EbGames],
   [Ebuyer.name, Ebuyer],
   [Elcorteingles.name, Elcorteingles],
-  [Electronic4you.name, Electronic4you],
   [Elkjop.name, Elkjop],
   [Eprice.name, Eprice],
   [Equippr.name, Equippr],
@@ -242,11 +230,9 @@ export const storeList = new Map([
   [Evga.name, Evga],
   [EvgaEu.name, EvgaEu],
   [Expert.name, Expert],
-  [Fust.name, Fust],
   [Futurex.name, Futurex],
   [Galaxus.name, Galaxus],
   [Game.name, Game],
-  [GameShop.name, GameShop],
   [Gamestop.name, Gamestop],
   [GamestopDE.name, GamestopDE],
   [GamestopIE.name, GamestopIE],
@@ -256,29 +242,23 @@ export const storeList = new Map([
   [HarrisTechnology.name, HarrisTechnology],
   [HarveyNormanIE.name, HarveyNormanIE],
   [Igamecomputer.name, Igamecomputer],
-  [Interdiscount.name, Interdiscount],
   [JohnLewis.name, JohnLewis],
   [Kabum.name, Kabum],
   [KomplettNO.name, KomplettNO],
-  [Konsolenkost.name, Konsolenkost],
   [LandmarkComputers.name, LandmarkComputers],
   [Mediamarkt.name, Mediamarkt],
   [MediamarktAt.name, MediamarktAt],
-  [MediamarktCh.name, MediamarktCh],
   [Medimax.name, Medimax],
   [Megekko.name, Megekko],
-  [Melectronics.name, Melectronics],
-  [Mueller.name, Mueller],
   [Ldlc.name, Ldlc],
-  [Libro.name, Libro],
   [Materiel.name, Materiel],
   [MemoryExpress.name, MemoryExpress],
   [MicroCenter.name, MicroCenter],
   [MightyApe.name, MightyApe],
   [Mindfactory.name, Mindfactory],
   [Msy.name, Msy],
+  [Multicom.name, Multicom],
   [Mwave.name, Mwave],
-  [MyToys.name, MyToys],
   [NetonnetNO.name, NetonnetNO],
   [Newegg.name, Newegg],
   [NeweggCa.name, NeweggCa],
@@ -315,7 +295,6 @@ export const storeList = new Map([
   [Scorptec.name, Scorptec],
   [ShopTo.name, ShopTo],
   [SmythsToys.name, SmythsToys],
-  [SmythsToysDE.name, SmythsToysDE],
   [SmythsToysIE.name, SmythsToysIE],
   [Spielegrotte.name, Spielegrotte],
   [StormComputers.name, StormComputers],
@@ -333,7 +312,6 @@ export const storeList = new Map([
   [WalmartCa.name, WalmartCa],
   [WellsTechnology.name, WellsTechnology],
   [Wipoid.name, Wipoid],
-  [WOG.name, WOG],
   [Xbox.name, Xbox],
   [Zotac.name, Zotac],
 ]);

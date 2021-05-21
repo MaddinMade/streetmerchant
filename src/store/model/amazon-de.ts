@@ -11,6 +11,11 @@ export const AmazonDe: Store = {
         'geben sie die zeichen unten ein',
       ],
     },
+    captchaHandler: {
+      challenge: '.a-row > img',
+      input: '#captchacharacters',
+      submit: 'button[type="submit"]',
+    },
     inStock: {
       container: '#add-to-cart-button',
       text: ['in den einkaufswagen'],
@@ -21,8 +26,8 @@ export const AmazonDe: Store = {
     },
     outOfStock: [
       {
-        container: '#product-top-right > div:nth-child(4) > div > div',
-        text: ['derzeit nicht'],
+        container: '#availability',
+        text: ['Derzeit nicht verfügbar'],
       },
     ],
   },
@@ -537,42 +542,31 @@ export const AmazonDe: Store = {
     },
     {
       brand: 'microsoft',
-      // Fixme: disabled because of #1095, enable when working again
-      // cartUrl:
-      // 	'https://www.amazon.de/gp/aws/cart/add.html?ASIN.1=B08H93ZRLL&Quantity.1=1',
+      cartUrl:
+        'https://www.amazon.de/gp/aws/cart/add.html?ASIN.1=B08H93ZRLL&Quantity.1=1',
+      labels: {
+        inStock: {
+          container: '#productTitle',
+          text: ['Xbox Series X'],
+        },
+      },
       model: 'xbox series x',
       series: 'xboxsx',
       url: 'https://www.amazon.de/dp/B08H93ZRLL',
     },
     {
       brand: 'microsoft',
-      // Fixme: disabled because of #1095, enable when working again
-      // cartUrl:
-      // 	'https://www.amazon.de/gp/aws/cart/add.html?ASIN.1=B087VM5XC6&Quantity.1=1',
+      cartUrl:
+        'https://www.amazon.de/gp/aws/cart/add.html?ASIN.1=B087VM5XC6&Quantity.1=1',
+      labels: {
+        inStock: {
+          container: '#productTitle',
+          text: ['Xbox Series S'],
+        },
+      },
       model: 'xbox series s',
       series: 'xboxss',
       url: 'https://www.amazon.de/dp/B087VM5XC6',
-    },
-    {
-      brand: 'sony',
-      model: 'ps5 console',
-      series: 'sonyps5c',
-      url:
-        'https://www.alternate.de/Sony-Interactive-Entertainment/PlayStation-5-Spielkonsole/html/product/1651220',
-    },
-    {
-      brand: 'sony',
-      model: 'ps5 console',
-      series: 'sonyps5c',
-      url:
-        'https://www.amazon.de/dp/B091DZ8WZQ',
-    },
-    {
-      brand: 'sony',
-      model: 'ps5 digital',
-      series: 'sonyps5de',
-      url:
-        'https://www.alternate.de/Sony-Interactive-Entertainment/PlayStation-5-Digital-Edition-Spielkonsole/html/product/1651221',
     },
   ],
   name: 'amazon-de',
