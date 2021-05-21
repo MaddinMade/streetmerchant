@@ -1,6 +1,7 @@
 import {Store} from './store';
 
 export const Saturn: Store = {
+  minPageSleep: 150000,
   backoffStatusCodes: [403, 429, 503],
   currency: '€',
   labels: {
@@ -229,6 +230,34 @@ export const Saturn: Store = {
       brand: 'sony',
       model: 'ps5 console',
       series: 'sonyps5c',
+      url:
+        'https://www.saturn.de/de/product/_sony-playstation%C2%AE5-digital-edition-dualsense%E2%84%A2-2715825.html',
+    },
+    {
+      brand: 'sony',
+      model: 'ps5 console',
+      series: 'sonyps5c',
+      url:
+        'https://www.saturn.de/de/product/_sony-playstation%C2%AE5-demon-s-souls-2724660.html',
+    },
+    {
+      brand: 'sony',
+      model: 'ps5 console',
+      series: 'sonyps5c',
+      url:
+        'https://www.saturn.de/de/product/_sony-playstation%C2%AE5-nioh-collection-2724659.html',
+    },
+    {
+      brand: 'sony',
+      model: 'ps5 console',
+      series: 'sonyps5c',
+      url:
+        'https://www.saturn.de/de/product/_sony-playstation%C2%AE5-hd-kamera-2715822.html',
+    },
+    {
+      brand: 'sony',
+      model: 'ps5 console',
+      series: 'sonyps5c',
       url: 'https://www.saturn.de/de/product/-2661938.html',
     },
     {
@@ -236,6 +265,18 @@ export const Saturn: Store = {
       model: 'ps5 digital',
       series: 'sonyps5de',
       url: 'https://www.saturn.de/de/product/-2661939.html',
+    },
+    {
+      brand: 'sony',
+      model: 'ps5 digital',
+      series: 'sonyps5de',
+      url: 'https://www.saturn.de/de/product/_sony-playstation%C2%AE5-digital-edition-dualsense%E2%84%A2-2715825.html',
+    },
+    {
+      brand: 'sony',
+      model: 'ps5 digital',
+      series: 'sonyps5de',
+      url: 'https://www.saturn.de/de/product/_sony-playstation%C2%AE5-digital-edition-hd-kamera-2715823.html',
     },
     {
       brand: 'microsoft',

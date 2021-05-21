@@ -270,6 +270,7 @@ export type Store = {
   waitUntil?: PuppeteerLifeCycleEvent;
   minPageSleep?: number;
   maxPageSleep?: number;
+  waitForSelector?: string;
 
   proxyList?: string[];
   currentProxyIndex?: number;
