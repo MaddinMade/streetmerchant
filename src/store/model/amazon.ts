@@ -18,7 +18,7 @@ export const Amazon: Store = {
       text: ['enter the characters you see below'],
     },
     captchaHandler: {
-      challenge: '.a-row > img',
+      image: '.a-row > img',
       input: '#captchacharacters',
       submit: 'button[type="submit"]',
     },
@@ -741,24 +741,12 @@ export const Amazon: Store = {
     },
     {
       brand: 'microsoft',
-      labels: {
-        inStock: {
-          container: '#productTitle',
-          text: ['Xbox Series X'],
-        },
-      },
       model: 'xbox series x',
       series: 'xboxsx',
       url: 'https://www.amazon.com/dp/B08H75RTZ8',
     },
     {
       brand: 'microsoft',
-      labels: {
-        inStock: {
-          container: '#productTitle',
-          text: ['Xbox Series S'],
-        },
-      },
       model: 'xbox series s',
       series: 'xboxss',
       url: 'https://www.amazon.com/dp/B08G9J44ZN',

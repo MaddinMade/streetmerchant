@@ -248,20 +248,31 @@ function buildProductString(link: Link, store: Store, color?: boolean): string {
       return (
         chalk.gray(`[${proxy}]`) +
         chalk.cyan(` [${store.name}]`) +
-        chalk.grey(` [${link.brand} (${link.series})] ${link.model}`)
+        //chalk.grey(` [${link.brand} (${link.series})]`) +
+        chalk.grey(` ${link.model}`)
       );
     } else {
       return (
         chalk.cyan(`[${store.name}]`) +
-        chalk.grey(` [${link.brand} (${link.series})] ${link.model}`)
+        //chalk.grey(` [${link.brand} (${link.series})]`) +
+        chalk.grey(` ${link.model}`)
       );
     }
   }
 
   if (store.currentProxyIndex !== undefined && store.proxyList) {
     const proxy = `${store.currentProxyIndex + 1}/${store.proxyList.length}`;
-    return `[${proxy}] [${store.name}] [${link.brand} (${link.series})] ${link.model}`;
+    return (
+      `[${proxy}]` +
+      ` [${store.name}]` +
+      //` [${link.brand} (${link.series})]` +
+      ` ${link.model}`
+    );
   } else {
-    return `[${store.name}] [${link.brand} (${link.series})] ${link.model}`;
+    return (
+      `[${store.name}]` +
+      //` [${link.brand} (${link.series})]` +
+      ` ${link.model}`
+    );
   }
 }

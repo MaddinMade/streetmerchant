@@ -213,10 +213,9 @@ export type Link = {
 };
 
 export type CaptchaHandlerElements = {
-  challenge: string;
+  image: string;
   input: string;
   submit: string;
-  captureType?: string;
 };
 
 export type LabelQuery = Element[] | Element | string[];
@@ -270,6 +269,7 @@ export type Store = {
   waitUntil?: PuppeteerLifeCycleEvent;
   minPageSleep?: number;
   maxPageSleep?: number;
+  waitForSelector?: string;
 
   proxyList?: string[];
   currentProxyIndex?: number;

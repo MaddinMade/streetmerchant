@@ -1,7 +1,7 @@
 import {Store} from './store';
 
 export const Computeruniverse: Store = {
-  backoffStatusCodes: [503],
+  backoffStatusCodes: [403, 429, 503],
   currency: '€',
   labels: {
     inStock: {
