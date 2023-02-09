@@ -309,6 +309,8 @@ async function lookupIem(
     return statusCode;
   }
 
+  if(store.waitForSelector) await page.waitForSelector(store.waitForSelector);
+
   if (await isItemInStock(store, page, link)) {
     const givenUrl =
       link.cartUrl && config.store.autoAddToCart ? link.cartUrl : link.url;

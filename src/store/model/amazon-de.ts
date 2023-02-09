@@ -21,8 +21,8 @@ export const AmazonDe: Store = {
     },
     outOfStock: [
       {
-        container: '#availability',
-        text: ['Derzeit nicht verfügbar'],
+        container: '#product-top-right > div:nth-child(4) > div > div',
+        text: ['derzeit nicht'],
       },
     ],
   },
@@ -552,6 +552,27 @@ export const AmazonDe: Store = {
       model: 'xbox series s',
       series: 'xboxss',
       url: 'https://www.amazon.de/dp/B087VM5XC6',
+    },
+    {
+      brand: 'sony',
+      model: 'ps5 console',
+      series: 'sonyps5c',
+      url:
+        'https://www.alternate.de/Sony-Interactive-Entertainment/PlayStation-5-Spielkonsole/html/product/1651220',
+    },
+    {
+      brand: 'sony',
+      model: 'ps5 console',
+      series: 'sonyps5c',
+      url:
+        'https://www.amazon.de/dp/B091DZ8WZQ',
+    },
+    {
+      brand: 'sony',
+      model: 'ps5 digital',
+      series: 'sonyps5de',
+      url:
+        'https://www.alternate.de/Sony-Interactive-Entertainment/PlayStation-5-Digital-Edition-Spielkonsole/html/product/1651221',
     },
   ],
   name: 'amazon-de',
