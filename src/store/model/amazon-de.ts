@@ -784,6 +784,34 @@ export const AmazonDe: Store = {
       series: 'xboxss',
       url: 'https://www.amazon.de/dp/B087VM5XC6',
     },
+    {
+      brand: 'apple',
+      cartUrl:
+        'https://www.amazon.de/gp/aws/cart/add.html?ASIN.1=B087VM5XC6&Quantity.1=1',
+      labels: {
+        inStock: {
+          container: '#productTitle',
+          text: ['Xbox Series S'],
+        },
+      },
+      model: 'iphone 15 pro',
+      series: 'iphone-15-pro',
+      url: 'https://www.amazon.de/dp/B0CHX2FWRC',
+    },
+    {
+      brand: 'apple',
+      cartUrl:
+        'https://www.amazon.de/gp/aws/cart/add.html?ASIN.1=B087VM5XC6&Quantity.1=1',
+      labels: {
+        inStock: {
+          container: '#productTitle',
+          text: ['Xbox Series S'],
+        },
+      },
+      model: 'iphone 15 pro max',
+      series: 'iphone-15-pro-max',
+      url: 'https://www.amazon.de/dp/B0CHX96JDY',
+    },
   ],
   name: 'amazon-de',
 };
